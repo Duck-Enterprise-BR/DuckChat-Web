@@ -17,6 +17,12 @@ function login(){
     isValidInput("#message-password-error", "Digite sua senha", password);
     
 
+    if(password.value.length <= 7){
+        console.log("error password");
+        isValidInput("#message-password-error", "Senha precisa ser maior que 7", password);
+        return;
+    }
+
     if(email.value && password.value){
         console.log(`Email: ${email.value}`);
         console.log(`Senha: ${password.value}`);
