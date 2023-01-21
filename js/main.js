@@ -2,8 +2,24 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const submitButton = document.querySelector(".card-group button")
 
+function isValidInput(selector, message, field){
+    const messageErrorElement = document.querySelector(selector);
+
+    if(!field.value){
+        return messageErrorElement.textContent = message;
+    } 
+
+    messageErrorElement.textContent = "";
+}
 
 function login(){
-    console.log(`Email: ${email.value}`);
-    console.log(`Senha: ${password.value}`);
+    isValidInput("#message-email-error", "Digite seu email", email);
+    isValidInput("#message-password-error", "Digite sua senha", password);
+    
+
+    if(email.value && password.value){
+        console.log(`Email: ${email.value}`);
+        console.log(`Senha: ${password.value}`);
+    }
+
 }
