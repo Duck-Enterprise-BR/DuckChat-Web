@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DuckChat</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DuckChat</title>
 
-<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
+    <body>
+        <div class="card">
+        <div class="card-top">
+            <img class="imglogin" src="img/duck logo.jfif" alt="">
+        <h2 class="title"> Login </h2>
 
-</head>
-<body>
-    
-<form class="form" action="">
-<div class="card">
-<div class="card-top">
-    <img class="imglogin" src="img/duck logo.jfif" alt="">
-<h2 class="title"> Login </h2>
+        </div>
+        <div class="card-group">
+            <label> Email </label>
+            <input type="text" name="email" id="email" placeholder="Digite seu email" required>
 
-</div>
-<div class="card-group">
-    <label> Email </label>
-    <input type="text" name="email" placeholder="Digite seu email" required>
-
-</div>
+        </div>
 
 
-<div class="card-group">
-    <label> Senha </label>
-    <input type="password" name="Senha" placeholder="Digite sua senha" required>
-</div>
+        <div class="card-group">
+            <label> Senha </label>
+            <input type="password" name="Senha" id="password" placeholder="Digite sua senha" required>
+        </div>
 
+        <div class="options">
+            <label>Lembra-me</label>
 
- 
+            <input type="checkbox" />
+        </div>
 
-</div>
+        
 
-<div class="card-group btn">
- <button type="submit">ACESSAR</button>
- 
+        </div>
 
-</div>
+        <div class="card-group">
+            <button type="submit" onclick="login()">ACESSAR</button>
+        </div>
+        <!-- <form class="form" id="form-login" action="">
+        </form> -->
+    </body>
 
-
-</div>
-
-</form>
-
-</body>
+    <script src="./js/main.js"></script>
 </html>
