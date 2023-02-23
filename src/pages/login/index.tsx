@@ -1,11 +1,14 @@
 import "./style.css"
 import logo from "../../imgs/logo.png"
 import { useEffect, useState } from "react"
+import { LoginService } from "./services/login.service";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function Login(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [disabledButton, setDisabledButton] = useState(true);
+    const navigate = useNavigate()
 
     useEffect(() => {
         if(email && password){
@@ -16,9 +19,12 @@ function Login(){
 
     }, [email, password]);
 
-    function onSubmit(){
-        console.log(email)
-        console.log(password)
+    async function onSubmit(){
+        const checkLogin = await LoginService(email, password);
+
+        if(!checkLogin.error){
+            navigate("/home")
+        }
     }
 
     return (
