@@ -1,0 +1,28 @@
+{
+    "contacts": [
+        {
+            "id": 1,
+            "name": "Antony Souza",
+            "lastMessage": "One sec please",
+            "img": "https://pps.whatsapp.net/v/t61.24694-24/321242767_1461187441082409_6564151728353379448_n.jpg?ccb=11-4&oh=01_AdQtychSpmbbg-l5qJWtHE1fvXfPwX5h96S0Rx0s-0MfAA&oe=64320E77",
+            "messageCount": 1,
+            "date": "30/01/2023"
+        },
+        {
+            "id": 2,
+            "name": "Intel HD PLust Edition",
+            "img": "https://pps.whatsapp.net/v/t61.24694-24/328670829_583988193452118_4794513666371135185_n.jpg?ccb=11-4&oh=01_AdQ20gSXZSgLVsRfpTqtRxn3op63kDSeoTDwjnboNdaboQ&oe=64321880",
+            "lastMessage": "KKKKKKKKKKKKK",
+            "messageCount": 50,
+            "date": "29/01/2023"
+        },
+        {
+            "id": 3,
+            "name": "Intel HD 2",
+            "img": "https://pps.whatsapp.net/v/t61.24694-24/328670829_583988193452118_4794513666371135185_n.jpg?ccb=11-4&oh=01_AdQ20gSXZSgLVsRfpTqtRxn3op63kDSeoTDwjnboNdaboQ&oe=64321880",
+            "lastMessage": "KKKKKKKKKKKKK",
+            "messageCount": 50,
+            "date": "29/01/2023"
+        }
+    ]
+}

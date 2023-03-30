@@ -1,0 +1,74 @@
+.container-page{
+    background-color: gray;
+    display: flex;
+    height: 100vh;
+}
+
+.container-list-contact-option{
+    background-color: aqua;
+    min-width: 27%;
+}
+
+.container-my-profile{
+    padding: 10px;
+}
+
+.container-chats{
+    background-color: orange;
+    width: 70%;
+}
+
+.container-contact{
+    background-color: #3b4a54;
+    height: 100%;
+}
+
+.container-contact-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 7px;
+    cursor: pointer;
+    border-bottom: solid 1px black;
+}
+
+.container-contact-item:hover{
+    background-color: rgb(0, 0, 145);
+}
+
+.container-contact-item-profile img{
+    border-radius: 50%;
+}
+
+.container-contact-item-message{
+    color: white;
+    width: 100%;
+    padding: 15px;
+}
+
+.container-contact-item-message-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-contact-item-message-title h4{
+    font-size: 13px;
+}
+
+.container-contact-item-message-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-contact-item-message-body-count-message{
+    background-color: green;
+    padding: 2px 3px;
+    min-width: 1.1vw;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.container-contact-item-message-body-count-message h6{
+    font-size: 13px;
+}
